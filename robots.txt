@@ -1,0 +1,35 @@
+# Clawcruit — robots.txt
+# https://clawcruit.page.gd
+
+User-agent: *
+Allow: /
+
+# AI / LLM answer-engine crawlers (explicitly allowed for GEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://clawcruit.page.gd/sitemap.xml
