@@ -1,0 +1,74 @@
+# Clawcruit
+
+> Clawcruit is an autonomous AI workforce platform by ParagonAI Labs. You describe a role — from sales and support to accounting, HR, DevOps, legal, marketing, and dozens more — and Clawcruit builds and onboards an AI employee ("a Clawcruit") for that role in about 60 seconds. The hire works from a web dashboard and from the chat apps a team already uses (WhatsApp, Telegram, Slack, Discord, Microsoft Teams, iMessage), guided by a persistent, editable knowledge base (SOUL.md, BOOTSTRAP.md, SKILLS.md). It is built on the OpenClaw autonomous-agent framework and currently uses the Google Gemini model family for AI processing.
+
+## Company
+
+- Product: Clawcruit
+- Operator: ParagonAI Labs (company to be registered under the laws of Kenya; headquarters in Mombasa, Kenya)
+- Status: In development, pre-launch waitlist, early access opening soon
+- Website: https://clawcruit.page.gd
+- Contact: hello@paragonailabs.com
+
+## Key pages
+
+- [Waitlist / Home](https://clawcruit.page.gd/): Join the early-access waitlist.
+- [About Clawcruit](https://clawcruit.page.gd/about.html): Full explainer — what it is, how it works, use cases, and FAQ.
+- [Roles Clawcruit can fill](https://clawcruit.page.gd/roles.html): Full directory of departments and roles Clawcruit can be hired for.
+- [Terms of Service](https://clawcruit.page.gd/terms.html)
+- [Privacy Policy](https://clawcruit.page.gd/privacy.html)
+
+## What Clawcruit does
+
+- Hire an AI employee for any described role in about 60 seconds (name the hire, describe the business, pick or define a role, connect channels, launch).
+- Works inside existing chat channels via the OpenClaw Gateway: WhatsApp, Telegram, Slack, Discord, Microsoft Teams, iMessage, and the Clawcruit web dashboard.
+- Each hire keeps a sovereign, human-editable Markdown knowledge base: SOUL.md (identity, tone, escalation rules), BOOTSTRAP.md (business knowledge), SKILLS.md (role workflows).
+- Connects to existing business software via API keys or Model Context Protocol (MCP)-style integrations (CRMs, ticketing systems, spreadsheets, internal tools).
+- Reads uploaded documents (PDF, DOCX, XLSX, TXT) and images (PNG, JPG, JPEG), and can browse webpages.
+- Can generate images, short videos, audio/music, Markdown reports with tables, and Python charting scripts.
+- Escalates to a human automatically on refund requests, legal mentions, requests for a manager, or genuine uncertainty.
+- Routes simple messages to faster/cheaper models and reserves higher-capability models for complex reasoning; downgrades automatically when token quota runs low.
+- Does not use customer workspace data, conversation history, or uploaded documents to train AI models.
+
+## Departments and roles Clawcruit can be hired for
+
+Compliance: Compliance Monitor
+Customer Success: Customer Success Manager
+Customer Support: Customer Support Specialist, Complaint Resolution Specialist, Live Chat Agent
+Data Operations: Data Entry Specialist
+Digital Health Services: Telehealth Support Agent
+Executive Office: Executive Assistant
+Finance: Accounts Payable Specialist, Accounts Receivable Specialist, Financial Reporting Analyst, Expense Management Coordinator, Budget Planning Analyst
+Health Information Management: Medical Records Specialist
+Human Resources: Recruiting Coordinator, HR Operations Specialist, Onboarding Specialist, Employee Engagement Analyst
+IT Support: IT Help Desk Agent
+Learning & Development: Course Designer, Training Coordinator
+Legal: Contract Review Specialist, Legal Research Assistant
+Listing Operations: Listing Coordinator
+Marketing: Content Marketing Manager, Social Media Manager, Email Marketing Specialist, SEO Specialist, Brand Strategist
+Office Administration: Office Manager
+Operations: Meeting Coordinator
+Patient Services: Patient Intake Coordinator
+Privacy: Privacy Officer Assistant
+Project Management: Project Coordinator
+Quality Assurance: QA Test Coordinator
+Risk Management: Risk Assessment Analyst
+Sales: Sales Development Representative, Account Executive, Lead Qualification Specialist, Appointment Setter
+Sales Development: Lead Nurture Specialist
+Sales Operations: Sales Operations Analyst
+Site Reliability Engineering: DevOps Monitor
+Student Services: Student Support Advisor
+Supply Chain: Inventory Manager
+Talent Acquisition: Talent Sourcer
+Technical Communications: Documentation Writer
+Technical Support: Technical Support Engineer
+Transaction Management: Transaction Coordinator
+Travel & Logistics: Travel Coordinator
+
+Custom roles not listed above can also be described and built on request.
+
+## Data & legal
+
+- Workspace data (SOUL.md, BOOTSTRAP.md, SKILLS.md, uploaded documents, logs) belongs to the customer; ParagonAI Labs does not train models on it.
+- AI processing is currently powered by the Google Gemini API (model-agnostic, may change).
+- Governing law: Kenya. See /terms.html and /privacy.html for full legal detail.
