@@ -1,0 +1,226 @@
+<h1 id="privacy-policy">Privacy Policy</h1>
+<p><strong>Clawcruit by</strong> <a href="https://paragonailabs.page.gd">ParagonAI Labs</a></p>
+<p><strong>Last updated:</strong> 5 August 2026</p>
+<hr>
+<h2 id="1-who-we-are">1. Who we are</h2>
+<p>Clawcruit is an autonomous AI workforce platform developed and operated by <strong>ParagonAI Labs</strong> (“we”, “us”, “our”), a company to be registered under the laws of Kenya with headquarters in Mombasa, Kenya.</p>
+<p>This Privacy Policy explains how we collect, use, store, share, and protect personal data when you use the Clawcruit platform, including the web dashboard, API, web widget, waitlist, and any connected messaging channels (collectively, the “Service”).</p>
+<p><strong>Data Controller:</strong><br>ParagonAI Labs<br>Mombasa, Kenya<br>Email: privacy@paragonailabs.com</p>
+<p>If you are located in the European Economic Area (EEA), United Kingdom, or Switzerland and require a local contact point under Article 27 GDPR, please email privacy@paragonailabs.com and we will provide the relevant details once appointed.</p>
+<p>By using Clawcruit, you acknowledge the practices described in this policy.</p>
+<hr>
+<h2 id="2-what-data-we-collect">2. What data we collect</h2>
+<h3 id="2-1-account-data">2.1 Account data</h3>
+<p>When you create a Clawcruit account or join the waitlist, we collect:</p>
+<ul>
+<li>Email address</li>
+<li>Name (if provided)</li>
+<li>bcrypt-hashed password (we never store passwords in plain text)</li>
+<li>Subscription plan and billing status (Starter, Pro, or Enterprise)</li>
+<li>Account creation and last-login timestamps</li>
+</ul>
+<h3 id="2-2-workspace-and-agent-data">2.2 Workspace and agent data</h3>
+<p>Each Clawcruit account is associated with a <strong>sovereign workspace</strong> — an isolated directory containing:</p>
+<ul>
+<li>SOUL.md — agent identity and tone configuration</li>
+<li>BOOTSTRAP.md — business knowledge base</li>
+<li>SKILLS.md — role and capability definitions</li>
+<li>config.json — security settings (authorised domains, notification preferences)</li>
+<li>HEARTBEAT.log — agent activity logs (status, last action, token usage)</li>
+<li>user.json — account metadata</li>
+</ul>
+<p>You own this data. It is never shared with other users or used to train AI models.</p>
+<h3 id="2-3-conversation-and-message-data">2.3 Conversation and message data</h3>
+<p>Messages processed by your Clawcruit agent (including customer messages received via WhatsApp, Telegram, Slack, Discord, Microsoft Teams, iMessage, or the web widget) are:</p>
+<ul>
+<li>Passed to the Google Gemini API (or successor model providers) for processing</li>
+<li>Logged in your workspace’s HEARTBEAT.log for activity tracking</li>
+<li>Not stored by us in a centralised conversation database outside your workspace</li>
+</ul>
+<h3 id="2-4-uploaded-documents">2.4 Uploaded documents</h3>
+<p>Documents you upload (PDF, DOCX, XLSX, TXT, etc.) are stored only in your sovereign workspace, parsed into your knowledge base, and never shared outside that workspace.</p>
+<h3 id="2-5-technical-and-usage-data">2.5 Technical and usage data</h3>
+<p>We automatically collect:</p>
+<ul>
+<li>Server access logs (IP address, request path, timestamp, HTTP status)</li>
+<li>Error logs for debugging</li>
+<li>Token usage estimates for the fuel-gauge feature</li>
+<li>Basic device/browser information necessary for security and session management</li>
+</ul>
+<p>We do <strong>not</strong> use third-party advertising cookies, tracking pixels, or data brokers. We do not sell or share personal information for cross-context behavioural advertising.</p>
+<h3 id="2-6-categories-of-personal-information-california-ccpa-cpra-">2.6 Categories of personal information (California – CCPA/CPRA)</h3>
+<p>In the preceding 12 months we may have collected the following categories of personal information:</p>
+<ul>
+<li>Identifiers (email, account ID, IP address)</li>
+<li>Commercial information (subscription plan, usage metrics)</li>
+<li>Internet or electronic network activity (access logs, token usage)</li>
+<li>Professional or employment-related information (if you supply company/role details)</li>
+<li>Inferences drawn from the above solely to operate the Service</li>
+</ul>
+<p>We do not collect sensitive personal information as defined under the CPRA for the purpose of inferring characteristics, nor do we sell or share personal information.</p>
+<hr>
+<h2 id="3-legal-bases-for-processing-gdpr-uk-gdpr-">3. Legal bases for processing (GDPR / UK GDPR)</h2>
+<p>Where the GDPR or UK GDPR applies, we process personal data on the following legal bases:</p>
+<table>
+<thead>
+<tr>
+<th>Purpose</th>
+<th>Legal basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Creating and managing your account, authenticating you, providing the Service</td>
+<td>Performance of a contract (Art. 6(1)(b))</td>
+</tr>
+<tr>
+<td>Processing messages through AI models and channel gateways so your agents can function</td>
+<td>Performance of a contract (Art. 6(1)(b))</td>
+</tr>
+<tr>
+<td>Security, fraud prevention, rate limiting, and abuse detection</td>
+<td>Legitimate interests (Art. 6(1)(f)) — protecting the Service and users</td>
+</tr>
+<tr>
+<td>Sending service-related notices (billing, security, material policy changes)</td>
+<td>Performance of a contract / legitimate interests</td>
+</tr>
+<tr>
+<td>Responding to support requests and exercising or defending legal claims</td>
+<td>Legitimate interests / legal obligation</td>
+</tr>
+<tr>
+<td>Optional marketing or product updates (only with consent)</td>
+<td>Consent (Art. 6(1)(a)) — you may withdraw at any time</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="4-how-we-use-your-data">4. How we use your data</h2>
+<p>We use your data solely to:</p>
+<ul>
+<li>Authenticate you and maintain your session (JWT-based: 15-minute access tokens with 7-day rotating HttpOnly refresh tokens)</li>
+<li>Operate, improve, and secure your Clawcruit agent and workspace</li>
+<li>Process messages sent to your agent through connected channels</li>
+<li>Send escalation alerts to your registered contact number when human intervention is required</li>
+<li>Calculate token quota usage and enforce plan limits</li>
+<li>Provide customer support</li>
+<li>Comply with legal obligations and protect our rights</li>
+</ul>
+<p>We do <strong>not</strong> use your workspace data, conversation history, or uploaded documents to train AI models.</p>
+<hr>
+<h2 id="5-data-sovereignty-storage-and-international-transfers">5. Data sovereignty, storage and international transfers</h2>
+<p>Your workspace data is stored on infrastructure we or you provision (VPS or managed cloud).  </p>
+<p>Because we use the Google Gemini API (and may use other model providers), some message content is processed on servers located in the United States or other countries outside Kenya and the EEA.  </p>
+<p>When personal data is transferred outside Kenya or the EEA/UK, we rely on appropriate safeguards, including:</p>
+<ul>
+<li>Standard Contractual Clauses (SCCs) or equivalent transfer mechanisms adopted by the European Commission / UK authorities where required</li>
+<li>Provider contractual commitments regarding data protection and zero-data-retention options where available for enterprise customers</li>
+</ul>
+<p>You can export or permanently delete your entire workspace at any time from Settings → Danger Zone. Deletion removes all files under your workspace directory and removes your email from the lookup index. This action is irreversible.</p>
+<hr>
+<h2 id="6-third-party-services">6. Third-party services</h2>
+<h3 id="6-1-google-gemini-api-or-successor-models-">6.1 Google Gemini API (or successor models)</h3>
+<p>Messages are sent to Google’s Generative AI services for inference. Google’s terms and privacy policy apply to that processing. We configure the integration so that, by default, Google does not use your content to train its models. Enterprise customers may request a key under Google’s Zero Data Retention terms where available.</p>
+<h3 id="6-2-openclaw-gateway-and-messaging-platforms">6.2 OpenClaw Gateway and messaging platforms</h3>
+<p>Channel synchronisation is powered by the OpenClaw Gateway and the respective platform APIs (WhatsApp, Telegram, Slack, Discord, Microsoft Teams, etc.). Their privacy policies and developer terms also apply to data in transit.</p>
+<h3 id="6-3-no-advertising-or-analytics-networks">6.3 No advertising or analytics networks</h3>
+<p>Clawcruit does not integrate advertising networks, third-party behavioural analytics trackers, or data brokers.</p>
+<hr>
+<h2 id="7-security">7. Security</h2>
+<p>We implement the following measures:</p>
+<ul>
+<li>Passwords hashed with bcrypt (cost factor 12)</li>
+<li>Short-lived JWTs (15 min) with rotating HttpOnly refresh tokens (7 days)</li>
+<li>Explicit file-access allowlist (only designated brain files are readable/writable via the API)</li>
+<li>Domain validation for API keys</li>
+<li>Rate limiting on authentication and other endpoints</li>
+<li>HTTPS/TLS required in production</li>
+<li>Server access and error logging with limited retention</li>
+</ul>
+<p>No system is perfectly secure. If you discover a vulnerability, please report it responsibly to security@paragonailabs.com.</p>
+<hr>
+<h2 id="8-data-retention">8. Data retention</h2>
+<table>
+<thead>
+<tr>
+<th>Data type</th>
+<th>Retention period</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Account data</td>
+<td>Until account deletion</td>
+</tr>
+<tr>
+<td>Workspace files</td>
+<td>Until account deletion or manual reset</td>
+</tr>
+<tr>
+<td>HEARTBEAT.log</td>
+<td>Rolling; cleared on workspace reset</td>
+</tr>
+<tr>
+<td>Server access logs</td>
+<td>30 days</td>
+</tr>
+<tr>
+<td>Error logs</td>
+<td>14 days</td>
+</tr>
+<tr>
+<td>Refresh tokens</td>
+<td>7 days (rotated on every use)</td>
+</tr>
+<tr>
+<td>Waitlist email</td>
+<td>Until you unsubscribe or we close the waitlist</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="9-your-rights">9. Your rights</h2>
+<h3 id="9-1-rights-under-gdpr-uk-gdpr-kenya-data-protection-act-2019">9.1 Rights under GDPR / UK GDPR / Kenya Data Protection Act 2019</h3>
+<p>Depending on your location you may have the right to:</p>
+<ul>
+<li>Access the personal data we hold about you</li>
+<li>Rectify inaccurate data</li>
+<li>Erase your data (“right to be forgotten”)</li>
+<li>Restrict or object to certain processing</li>
+<li>Data portability</li>
+<li>Withdraw consent at any time (where processing is based on consent)</li>
+<li>Lodge a complaint with a supervisory authority</li>
+</ul>
+<p>We will respond to valid requests within 30 days (or the period required by applicable law).</p>
+<h3 id="9-2-california-residents-ccpa-cpra-">9.2 California residents (CCPA/CPRA)</h3>
+<p>If you are a California resident you have the right to:</p>
+<ul>
+<li>Know the categories and specific pieces of personal information we have collected about you</li>
+<li>Delete personal information we have collected (subject to legal exceptions)</li>
+<li>Correct inaccurate personal information</li>
+<li>Opt out of the sale or sharing of personal information (we do not sell or share)</li>
+<li>Limit the use and disclosure of sensitive personal information (we do not use sensitive PI to infer characteristics)</li>
+<li>Non-discrimination for exercising your rights</li>
+</ul>
+<p>To exercise any of these rights, email privacy@paragonailabs.com. We will verify your request and respond within the timeframes required by law. You may also designate an authorised agent.</p>
+<p><strong>We do not sell or share personal information</strong> as those terms are defined under the CCPA/CPRA. Therefore a “Do Not Sell or Share My Personal Information” opt-out is not required for our current practices; if this ever changes we will update this policy and provide the required mechanisms.</p>
+<h3 id="9-3-automated-decision-making">9.3 Automated decision-making</h3>
+<p>Your Clawcruit agents make automated responses based on the configuration and knowledge you supply. Where those responses could produce legal or similarly significant effects on individuals, you are responsible for ensuring appropriate human oversight and escalation paths. You may contact us if you believe an automated process has produced an incorrect or unfair outcome affecting you.</p>
+<hr>
+<h2 id="10-children">10. Children</h2>
+<p>Clawcruit is not directed at children under 16. We do not knowingly collect personal data from children under 16. If you believe a child has created an account or submitted data, contact us and we will delete it promptly. (COPPA and equivalent rules are observed.)</p>
+<hr>
+<h2 id="11-data-processing-agreements-business-customers-">11. Data Processing Agreements (business customers)</h2>
+<p>If you are a business customer and act as a data controller of personal data that you process through Clawcruit (for example, your own customers’ messages), you may request a Data Processing Agreement (DPA) that incorporates Standard Contractual Clauses where required. Contact privacy@paragonailabs.com.</p>
+<hr>
+<h2 id="12-breach-notification">12. Breach notification</h2>
+<p>In the event of a personal data breach that is likely to result in a risk to the rights and freedoms of individuals, we will notify the relevant supervisory authority without undue delay and, where required, affected individuals, in accordance with applicable law (including the 72-hour GDPR timeframe where it applies).</p>
+<hr>
+<h2 id="13-changes-to-this-policy">13. Changes to this policy</h2>
+<p>We may update this policy as the platform evolves. We will notify you of material changes via email or a prominent notice in the dashboard at least 14 days in advance where practicable. Continued use of the Service after changes take effect constitutes acceptance of the updated policy.</p>
+<hr>
+<h2 id="14-contact">14. Contact</h2>
+<p><strong>ParagonAI Labs</strong><br>Mombasa, Kenya  </p>
+<p>Privacy: privacy@paragonailabs.com<br>Security: security@paragonailabs.com<br>Legal: legal@paragonailabs.com  </p>
+<p>Website: <a href="https://paragonailabs.page.gd">https://paragonailabs.page.gd</a><br>Product: <a href="https://clawcruit.com">https://clawcruit.com</a></p>

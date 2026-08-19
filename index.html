@@ -1,0 +1,489 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clawcruit — Your Autonomous Workforce Is Coming</title>
+  <meta name="description" content="Hire AI professionals for sales, support, finance, HR, and more. Join the Clawcruit waitlist for early access." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/my-favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/my-favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/my-favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/my-favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Clawcruit" />
+  <link rel="manifest" href="/my-favicon/site.webmanifest" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Clawcruit — Your Autonomous Workforce Is Coming" />
+<meta property="og:description" content="Hire AI professionals for sales, support, finance, HR, and more. Onboard in 60 seconds." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://clawcruit.page.gd" />
+<meta property="og:image" content="https://clawcruit.page.gd/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://clawcruit.page.gd/og-image.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tabler Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+  <style>
+    :root {
+      --co: #2B5CE6;
+      --co-l: #EEF2FD;
+      --nv: #1A2B5C;
+      --em: #2ECC8F;
+      --em-l: #E8FAF3;
+      --sf: #F7F9FE;
+      --bd: rgba(43,92,230,0.12);
+      --t2: #5A6A99;
+      --t3: #9AAAC8;
+      --rd: #E24B4A;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      height: 100%;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: #ffffff;
+      color: var(--nv);
+    }
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(90px);
+      opacity: 0.4;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .blob-1 { width: 500px; height: 500px; background: var(--co-l); top: -140px; right: -140px; }
+    .blob-2 { width: 380px; height: 380px; background: var(--em-l); bottom: -100px; left: -100px; }
+    .inner {
+      position: relative;
+      z-index: 1;
+      max-width: 580px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Logo block */
+    .logo-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 2.5rem;
+    }
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .logo-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      overflow: hidden;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--co);
+    }
+    .logo-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .logo-name {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--nv);
+      letter-spacing: -0.02em;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 14px;
+      border-radius: 999px;
+      background: var(--co-l);
+      border: 0.5px solid rgba(43,92,230,0.25);
+      font-size: 12.5px;
+      font-weight: 500;
+      color: var(--co);
+    }
+    .badge-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--co);
+      flex-shrink: 0;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.35} }
+
+    h1 {
+      font-size: 44px;
+      font-weight: 600;
+      color: var(--nv);
+      line-height: 1.13;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.1rem;
+    }
+    h1 span { color: var(--co); }
+    .sub {
+      font-size: 16px;
+      color: var(--t2);
+      line-height: 1.65;
+      margin-bottom: 2.5rem;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .form-wrap {
+      display: flex;
+      gap: 8px;
+      max-width: 460px;
+      margin: 0 auto 0.875rem;
+    }
+    .email-input {
+      flex: 1;
+      height: 48px;
+      border: 1.5px solid rgba(43,92,230,0.35);
+      border-radius: 10px;
+      background: var(--sf);
+      color: var(--nv);
+      font-size: 14.5px;
+      padding: 0 14px;
+      outline: none;
+      font-family: inherit;
+      transition: border-color .15s, box-shadow .15s;
+    }
+    .email-input:focus {
+      border-color: var(--co);
+      box-shadow: 0 0 0 3px rgba(43,92,230,0.1);
+      background: #fff;
+    }
+    .email-input::placeholder { color: var(--t3); }
+    .email-input.error { border-color: var(--rd); }
+    .btn-join {
+      height: 48px;
+      padding: 0 24px;
+      border-radius: 10px;
+      border: none;
+      background: var(--co);
+      color: #fff;
+      font-size: 14.5px;
+      font-weight: 500;
+      cursor: pointer;
+      font-family: inherit;
+      white-space: nowrap;
+      transition: background .15s, transform .1s;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .btn-join:hover { background: #1F4ACC; }
+    .btn-join:active { transform: scale(0.98); }
+    .form-note {
+      font-size: 12.5px;
+      color: var(--t3);
+      margin-bottom: 1.25rem;
+    }
+    .learn-more {
+      font-size: 13.5px;
+      margin-bottom: 2.75rem;
+    }
+    .learn-more a {
+      color: var(--co);
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: opacity .13s;
+    }
+    .learn-more a:hover { opacity: 0.8; }
+
+    .success {
+      display: none;
+      align-items: center;
+      gap: 10px;
+      background: var(--em-l);
+      border: 0.5px solid rgba(46,204,143,0.3);
+      border-radius: 10px;
+      padding: 14px 18px;
+      font-size: 14px;
+      color: #0F6E56;
+      font-weight: 500;
+      max-width: 460px;
+      margin: 0 auto 3rem;
+      text-align: left;
+    }
+
+    .pills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 3rem;
+    }
+    .pill {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 6px 13px;
+      border-radius: 999px;
+      background: var(--sf);
+      border: 0.5px solid var(--bd);
+      font-size: 12.5px;
+      color: var(--t2);
+      font-weight: 500;
+    }
+    .pill i { font-size: 14px; color: var(--co); }
+
+    .social-proof {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--t3);
+    }
+    .avatars { display: flex; }
+    .av {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 9px; font-weight: 600;
+      color: #fff;
+      margin-left: -8px;
+      flex-shrink: 0;
+    }
+    .av:first-child { margin-left: 0; }
+
+    .social-links {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .social-btn {
+      width: 38px; height: 38px;
+      border-radius: 10px;
+      border: 1.5px solid rgba(43,92,230,0.2);
+      background: var(--sf);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--t2);
+      text-decoration: none;
+      transition: border-color .13s, color .13s, background .13s;
+    }
+    .social-btn:hover {
+      border-color: var(--co);
+      color: var(--co);
+      background: var(--co-l);
+    }
+    .social-btn i { font-size: 17px; }
+
+    footer {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      font-size: 12px;
+      color: var(--t3);
+      margin-top: 0.5rem;
+      line-height: 1.8;
+    }
+    footer a { color: var(--t3); text-decoration: none; transition: color .13s; }
+    footer a:hover { color: var(--co); }
+    footer .sep { margin: 0 6px; opacity: 0.5; }
+
+    @media (max-width: 520px) {
+      h1 { font-size: 32px; }
+      .sub { font-size: 15px; }
+      .form-wrap { flex-direction: column; }
+      .btn-join { justify-content: center; }
+      .blob-1 { width: 300px; height: 300px; }
+      .blob-2 { width: 240px; height: 240px; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <div class="blob blob-1" aria-hidden="true"></div>
+  <div class="blob blob-2" aria-hidden="true"></div>
+
+  <div class="inner">
+    <!-- Logo + badge -->
+    <div class="logo-block">
+      <a href="/" class="logo" aria-label="Clawcruit home">
+        <div class="logo-icon">
+          <!-- Place your logo file at /my-favicon/logo-36.png (36×36 px recommended) -->
+          <img src="/my-favicon/logo-36.png" alt="Clawcruit" width="36" height="36"
+               onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\'ti ti-brain\' style=\'color:#fff;font-size:18px\' aria-hidden=\'true\'></i>';" />
+        </div>
+        <span class="logo-name">Clawcruit</span>
+      </a>
+      <div class="badge" role="status">
+        <span class="badge-dot" aria-hidden="true"></span>
+        Now in development &middot; Early access opening soon
+      </div>
+    </div>
+
+    <!-- Headline -->
+    <h1>Your autonomous<br>workforce is <span>coming.</span></h1>
+    <p class="sub">
+      Clawcruit lets you hire AI professionals for finance, support, sales, HR, DevOps, and more &mdash; that work from your preferred chat app &mdash; WhatsApp, Telegram, Slack, MS Teams, etc., and your Clawcruit dashboard. Join the waitlist to get early access.
+    </p>
+
+    <!-- Form -->
+    <div class="form-wrap" id="form-wrap">
+      <input
+        class="email-input"
+        type="email"
+        id="email-input"
+        placeholder="Enter your work email"
+        autocomplete="email"
+        aria-label="Email address"
+        onkeydown="if(event.key==='Enter') submitForm()"
+      />
+      <button class="btn-join" onclick="submitForm()" aria-label="Join waitlist">
+        Join waitlist
+        <i class="ti ti-arrow-right" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <!-- Success state -->
+    <div class="success" id="success-msg" role="alert" aria-live="polite">
+      <i class="ti ti-circle-check" style="font-size:20px;flex-shrink:0;color:#2ECC8F" aria-hidden="true"></i>
+      <span>You&rsquo;re on the list! We&rsquo;ll reach out as soon as early access opens.</span>
+    </div>
+
+    <p class="form-note" id="form-note">
+      No spam &middot; Unsubscribe any time &middot; Your data stays private
+    </p>
+
+    <!-- Learn more link -->
+    <p class="learn-more" id="learn-more">
+      <a href="/about.html">Learn more about Clawcruit <i class="ti ti-arrow-right" style="font-size:14px" aria-hidden="true"></i></a>
+    </p>
+
+    <!-- Role pills -->
+    <div class="pills" aria-label="Available roles">
+      <span class="pill"><i class="ti ti-chart-bar" aria-hidden="true"></i>Sales closer</span>
+      <span class="pill"><i class="ti ti-headset" aria-hidden="true"></i>Customer support</span>
+      <span class="pill"><i class="ti ti-calculator" aria-hidden="true"></i>Accountant</span>
+      <span class="pill"><i class="ti ti-calendar-event" aria-hidden="true"></i>Virtual assistant</span>
+      <span class="pill"><i class="ti ti-code" aria-hidden="true"></i>DevOps engineer</span>
+      <span class="pill"><i class="ti ti-users" aria-hidden="true"></i>HR specialist</span>
+      <span class="pill"><i class="ti ti-speakerphone" aria-hidden="true"></i>Marketing strategist</span>
+    </div>
+
+    <!-- Social proof with real starting count -->
+    <div class="social-proof">
+      <div class="avatars" aria-hidden="true">
+        <div class="av" style="background:#2B5CE6">KO</div>
+        <div class="av" style="background:#2ECC8F">AM</div>
+        <div class="av" style="background:#1A2B5C">DS</div>
+        <div class="av" style="background:#7C3AED">RN</div>
+      </div>
+      <span>Join <strong id="count" style="color:var(--nv)">60</strong> people already on the waitlist</span>
+    </div>
+  </div>
+
+  <!-- Social links -->
+  <div class="social-links">
+    <a href="https://x.com/clawcruit" target="_blank" rel="noopener" aria-label="Clawcruit on X" class="social-btn">
+      <i class="ti ti-brand-x" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61590090074945" target="_blank" rel="noopener" aria-label="Clawcruit on Facebook" class="social-btn">
+      <i class="ti ti-brand-facebook" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.instagram.com/clawcruit" target="_blank" rel="noopener" aria-label="Clawcruit on Instagram" class="social-btn">
+      <i class="ti ti-brand-instagram" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.linkedin.com/company/clawcruit" target="_blank" rel="noopener" aria-label="Clawcruit on LinkedIn" class="social-btn">
+      <i class="ti ti-brand-linkedin" aria-hidden="true"></i>
+    </a>
+  </div>
+
+  <footer>
+    <p>
+      &copy; 2026 Clawcruit by ParagonAI Labs
+      <span class="sep">&middot;</span>
+      <a href="/about.html">About</a>
+      <span class="sep">&middot;</span>
+      <a href="privacy.html">Privacy</a>
+      <span class="sep">&middot;</span>
+      <a href="terms.html">Terms</a>
+    </p>
+    <p style="margin-top:4px">
+      Powered by <a href="https://openclaw.ai" target="_blank" rel="noopener">OpenClaw</a>
+      &middot;
+      <a href="https://paragonailabs.page.gd" target="_blank" rel="noopener">ParagonAI Labs</a>
+    </p>
+  </footer>
+</div>
+
+<script>
+  // Starting count = real current waitlist size
+  const STARTING_COUNT = 60;
+
+  function submitForm() {
+    const input = document.getElementById('email-input');
+    const email = input.value.trim();
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!re.test(email)) {
+      input.classList.add('error');
+      input.focus();
+      setTimeout(() => input.classList.remove('error'), 1800);
+      return;
+    }
+
+    // Hide form + note + learn-more, show success
+    document.getElementById('form-wrap').style.display = 'none';
+    document.getElementById('form-note').style.display = 'none';
+    document.getElementById('learn-more').style.display = 'none';
+    document.getElementById('success-msg').style.display = 'flex';
+
+    // Increment the visible count (FOMO)
+    const countEl = document.getElementById('count');
+    const current = parseInt(countEl.textContent, 10) || STARTING_COUNT;
+    countEl.textContent = current + 1;
+
+    // Submit to Formspree
+    fetch('https://formspree.io/maqkglwv', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({ email: email, source: 'clawcruit-waitlist' }),
+    }).catch(function(err) {
+      console.error('Waitlist submission error:', err);
+    });
+  }
+</script>
+</body>
+</html>
